@@ -4,15 +4,35 @@
         <h1 id="title">Vous avez gagné un Iphone</h1>
         <h2> Félicitations ! </h2>
         <h3> Pour récupérer votre prix, veuillez cliquer sur le bouton ci-dessous </h3>
-        <button id="btn">Cliquez ici</button>
+        <button id="btn">Cliquez ici</button><button id="btn2">Signaler</button>
         <p id="message"></p>
+        <head>
+            <style>
+                #btn {
+                    color :blue;
+                    text-align:center;
+                }
+                #btn2 {
+                    color :red;
+                }
+                h1 { 
+                    color:black;
+                    font-size: 50px;
+                    text-align:center;
+                }
+            </style>
+        </head>
 
         <script>
             const btn = document.getElementById("btn");
+            const btn2 = document.getElementById("btn2");
             const message = document.getElementById("message");
 
             btn.addEventListener("click", function () {
                 message.textContent = "Vous vous êtes fait pirater !";
+            });
+            btn2.addEventListener("click", function () {
+                message.textContent = "Merci de nous avoir signalé !";
             });
         </script>
     </body>
