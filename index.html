@@ -4,13 +4,13 @@
         <h1 id="title">Vous avez gagné un Iphone</h1>
         <h2> Félicitations ! </h2>
         <h3> Pour récupérer votre prix, veuillez cliquer sur le bouton ci-dessous </h3>
-        <button id="btn">Cliquez ici</button><button id="btn2">Signaler</button>
-        <p id="message"></p>
+        <button id="btn1">Cliquez ici</button><button id="btn2">Signaler</button>
+        <p id="message1"></p>
+        <p id="message2"></p>
         <head>
             <style>
-                #btn {
+                #btn1 {
                     color :blue;
-                    text-align:center;
                 }
                 #btn2 {
                     color :red;
@@ -20,19 +20,30 @@
                     font-size: 50px;
                     text-align:center;
                 }
+                #message1 {
+                    color: red;
+                    font-size: 60px;
+                    text-align:center;
+                }
+                #message2 {
+                    color: green;
+                    font-size: 20px;
+                    text-align:center;
+                }
             </style>
         </head>
 
         <script>
-            const btn = document.getElementById("btn");
+            const btn1 = document.getElementById("btn1");
             const btn2 = document.getElementById("btn2");
-            const message = document.getElementById("message");
+            const message1 = document.getElementById("message1");
+            const message2 = document.getElementById("message2");
 
-            btn.addEventListener("click", function () {
-                message.textContent = "Vous vous êtes fait pirater !";
+            btn1.addEventListener("click", function () {
+                message1.textContent = "Vous vous êtes fait pirater !";
             });
             btn2.addEventListener("click", function () {
-                message.textContent = "Merci de nous avoir signalé !";
+                message2.textContent = "Merci de nous l'avoir signalé !";
             });
         </script>
     </body>
