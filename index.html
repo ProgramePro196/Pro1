@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="title">Vous avez gagné un Iphone</h1>
+        <h2> Félicitations ! </h2>
+        <h3> Pour récupérer votre prix, veuillez cliquer sur le bouton ci-dessous </h3>
+        <button id="btn">Cliquez ici</button>
+        <p id="message"></p>
+
+        <script>
+            const btn = document.getElementById("btn");
+            const message = document.getElementById("message");
+
+            btn.addEventListener("click", function () {
+                message.textContent = "Vous vous êtes fait pirater !";
+            });
+        </script>
+    </body>
+</html>
