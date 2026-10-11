@@ -15,6 +15,7 @@
         <p id="paragraphe2"> Nous avons le plaisir de vous anoncer que vous êtes l'heureux gagnant de cet Iphone 18 pro max !</p>
         <h4 id="automessage">Ceci est un message automatique, merci de ne pas y répondre</h4>
         <h3 id="option">Option</h3>
+        <img src="capture.png" alt="photo 1">
         <p id="message1"></p>
         <p id="message2"></p>
         <p id="message3"></p>
@@ -98,12 +99,13 @@
                     right: 34px;
                     position: absolute;
                 }
-                body {
-                    background-image: url("capture.png");
-                    background-size: 500px auto;
-                    background-repeat: no-repeat;
-                    background-color: black;
-                    background-position: right;
+                img {
+                    display: block;
+                    width: 250px;
+                    max-width: 100%;
+                    height: auto;
+                    margin: auto;
+                    border-radius: 12px;
                 }
                 #paragraphe1 {
                     color: white;
